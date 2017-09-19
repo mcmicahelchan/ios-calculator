@@ -44,8 +44,12 @@ class ViewController: UIViewController {
         let operant = sender.currentTitle!
         brain.performOperation(symbol: operant)
         displayValue = brain.result
-
     }
+    @IBAction func clearOnClick() {
+        displayValue = 0
+        brain.clear()
+    }
+    
     
 }
 
